@@ -1,0 +1,9 @@
+{
+  "editor.fontSize": 14,
+  "files.exclude": {
+    "**/.git": false,
+    "**/*.js": true,
+    "**/*.js.map": true,
+    // "**"
+  },
+}
