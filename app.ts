@@ -1,3 +1,13 @@
+// interface declaration
+enum LanguagesKnown { English, Hindi, Tamil }
+
+interface StudentInfo {
+  Name: String,
+  Age: Number,
+  Phone: Number,
+  Language: String,
+  // Language: LanguagesKnown
+}
 
 console.log('Hello ExecuteAutomation');
 
@@ -9,14 +19,14 @@ let k: number = 1234;
 
 console.log('a :', a);
 
-enum LanguagesKnown { English, Hindi, Tamil }
 
-let studentsList = [
-  { Name: "Prashanth", Age: 26, Phone: 234 - 234 - 2341, Language: LanguagesKnown[LanguagesKnown.English] },
-  { Name: "Roberto", Age: 25, Phone: 234 - 234 - 2342, Language: LanguagesKnown.Hindi }
+
+let studentsList: StudentInfo[] = [
+  { Name: "Prashanth", Age: 26, Phone: 2342342341, Language: LanguagesKnown[LanguagesKnown.English] },
+  { Name: "Roberto", Age: 25, Phone: 2342342342, Language: LanguagesKnown[LanguagesKnown.Hindi] }
 ]
 
-let newStudent = { Name: "Reddy", Age: 24, Phone: 234 - 234 - 2343, Language: LanguagesKnown.Tamil };
+let newStudent = { Name: "Reddy", Age: 24, Phone: 2342342343, Language: LanguagesKnown[LanguagesKnown.Tamil] };
 
 studentsList.push(newStudent);
 
@@ -44,3 +54,11 @@ function GetInfo(info: string = "Happy") {
 
 GetInfo();
 GetInfo('Energized');
+
+// anonymous function
+let StudentName = function (lName: string, fName: string) {
+  return fName + '...' + lName
+}
+console.log(StudentName("Bob", "Job"));
+
+
