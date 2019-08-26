@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
     "sourceMap": true,
-  }
+  },
+  "files": [
+    "app.ts",
+    "level1.ts"
+  ]
 }
