@@ -6,7 +6,9 @@
   },
   "files": [
     "app.ts",
-    "level1.ts",
-    "level2.ts"
+    "NamespaceSample.ts",
+    "ClassSample.ts",
+    "ModuleSample.ts",
+    "StudentCalc.ts"
   ]
 }
