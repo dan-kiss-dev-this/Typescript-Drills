@@ -6,4 +6,4 @@ interface IStudentInfo {
   // Language: LanguagesKnown
 }
 
-export { IStudentInfo as StudentInfo };
+export { IStudentInfo };

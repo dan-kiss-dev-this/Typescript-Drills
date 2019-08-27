@@ -1,4 +1,4 @@
-class Students {
+export default class Students {
   constructor(private fname, private lName) { }
 
 
@@ -7,4 +7,4 @@ class Students {
   }
 }
 
-export { Students };
+// export { Students };
