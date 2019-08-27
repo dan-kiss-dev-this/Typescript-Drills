@@ -4,6 +4,7 @@
   },
   "files": [
     "app.ts",
-    "level1.ts"
+    "level1.ts",
+    "level2.ts"
   ]
 }
