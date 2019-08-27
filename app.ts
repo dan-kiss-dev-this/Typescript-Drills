@@ -2,6 +2,8 @@ import { IStudentInfo } from './IStudentInfo';
 import Students from './Student';
 // import Stud from './Studnets'
 
+// import Students = require('./Student');
+
 // interface declaration
 enum LanguagesKnown { English, Hindi, Tamil }
 

@@ -1,6 +1,8 @@
 "use strict";
-exports.__esModule = true;
-var Student_1 = require("./Student");
+Object.defineProperty(exports, "__esModule", { value: true });
+const Student_1 = require("./Student");
+// import Stud from './Studnets'
+// import Students = require('./Student');
 // interface declaration
 var LanguagesKnown;
 (function (LanguagesKnown) {
@@ -9,52 +11,47 @@ var LanguagesKnown;
     LanguagesKnown[LanguagesKnown["Tamil"] = 2] = "Tamil";
 })(LanguagesKnown || (LanguagesKnown = {}));
 console.log('Hello ExecuteAutomation');
-var a = true;
-var b = 'Karthik';
-var k = 1234;
+let a = true;
+let b = 'Karthik';
+let k = 1234;
 console.log('a :', a);
-var studentsList = [
+let studentsList = [
     { Name: "Prashanth", Age: 26, Phone: 2342342341, Language: LanguagesKnown[LanguagesKnown.English] },
     { Name: "Roberto", Age: 25, Phone: 2342342342, Language: LanguagesKnown[LanguagesKnown.Hindi] }
 ];
-var newStudent = { Name: "Reddy", Age: 24, Phone: 2342342343, Language: LanguagesKnown[LanguagesKnown.Tamil] };
+let newStudent = { Name: "Reddy", Age: 24, Phone: 2342342343, Language: LanguagesKnown[LanguagesKnown.Tamil] };
 studentsList.push(newStudent);
 function GetStudentList(students) {
-    students.forEach(function (element) {
+    students.forEach(element => {
         console.log("Age: " + element.Age + ' with Name ' + element.Name + " has Phone: " + element.Phone);
     });
 }
 GetStudentList(studentsList);
-function GetNumbers() {
-    var nums = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        nums[_i] = arguments[_i];
-    }
-    nums.forEach(function (element) {
+function GetNumbers(...nums) {
+    nums.forEach(element => {
         console.log('element :', element);
     });
 }
 GetNumbers(5, 4, 3, 6, 1);
-function GetInfo(info) {
-    if (info === void 0) { info = "Happy"; }
+function GetInfo(info = "Happy") {
     console.log('I feel ' + info);
 }
 GetInfo();
 GetInfo('Energized');
 ////// 
-var StudentName = function (lName, fName) {
+let StudentName = function (lName, fName) {
     return fName + '...' + lName;
 };
 console.log(StudentName("Bob", "Job"));
-var s = new Student_1.Students('Rick', 'James');
+let s = new Student_1.default('Rick', 'James');
 console.log(s.GetFullName());
 // Generics
-var studentsListG = [
+let studentsListG = [
     { Name: "Prashanth", Age: 26, Phone: 2342342341, Language: LanguagesKnown[LanguagesKnown.English] },
     { Name: "Roberto", Age: 25, Phone: 2342342342, Language: LanguagesKnown[LanguagesKnown.Hindi] }
 ];
 function GetStudentListGenerics(students) {
-    students.forEach(function (element) {
+    students.forEach(element => {
         console.log("Age2: " + element.Age + ' with Name ' + element.Name + " has Phone: " + element.Phone);
     });
 }

@@ -7,4 +7,4 @@ export default class Students {
   }
 }
 
-// export { Students };
+// export = Students;
